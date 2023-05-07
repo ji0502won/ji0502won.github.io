@@ -8,13 +8,21 @@
                 border-collapse: collapse;
                 padding: 8px;
             }
-			
+
+
             </style>
+			<script>
+				function sub() {
+					document.getElementById('welcome').style.color = 'PURPLE';
+				}
+			</script>
     </head>
 
     <body>
-    <h3>
-		환영합니다! 20220335 김지원의 홈페이지입니다. <br></h3>
+
+		<h3 id="welcome">환영합니다!</h3>
+		<button onclick="sub();" type="button">WELCOME!!</button>
+		<h3>20220335 김지원의 홈페이지입니다. <br></h3>
 	<h2 onmouseover="this.style.color='pink'"
 	    onmouseout="this.style.color='black'">김지원의 시간표</h2>
 	
