@@ -1,138 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            table, th, tr, td {
-                border: solid 1px black;
-                border-collapse: collapse;
-                padding: 8px;
-            }
+<head>
+<meta charset='utf-8'>
+<style>
 
-
-            </style>
-			
-			<script>
-				function sub() {
-					document.getElementById('welcome').style.color = 'PURPLE';
-				}
-			</script>
-    </head>
-
-    <body>
-
-		<h3 id="welcome">환영합니다!</h3>
-		<button onclick="sub();" type="button">WELCOME!!</button>
-		<h3>20220335 김지원의 홈페이지입니다. <br></h3>
-	<h2 onmouseover="this.style.color='pink'"
-	    onmouseout="this.style.color='black'">김지원의 시간표</h2>
+*{padding:0px; margin:0px;
+	box-sizing: border-box;
+}
 	
+
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.c {background:#67eb81;}
+
+body{
+		background-color: #e8ffed;
+	}
+
+
+
+header, nav, section, aside, footer{
+	border:solid 0px red;
+}
+header{
+	width: 995px; height: 70px;
+	margin-top:10px;
+	background-color: #b2ebbe;
+	border-radius: 25px;
 	
-    <table>
-		<tr>
-			<th><img src='달력.png ' width="100" height="100"
-				img onmouseout="this.style.width='100px'"
-                onmouseover="this.style.width='200px'"
-                src="달력.png" width="100px"
-	>시간/요일</th>
-			<th>월</th>
-			<th>화</th>
-			<th>수</th>
-			<th>목</th>
-			<th>금</th>
-			<th colspan="2">토</th>
-		</tr>
-		<tr>
-			<th>1교시(9:30~10:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>2교시(10:30~11:20)</th>
-			<td></td>
-			<td></td>
-			<td>경영통계</td>
-			<td>디지털콘텐츠<br>비즈니스개론</td>
-			<td rowspan="2">웹프로그래밍</td>
-		</tr>
-		<tr>
-			<th>3교시(11:30~12:20)</th>
-			<td></td>
-			<td rowspan="2">디지털콘텐츠<br>비즈니스개론</td>
-			<td></td>
-			<td rowspan="2">대학영어회화2</td>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th>4교시(12:30~1:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>5교시(1:30~2:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td rowspan="2">경영통계</td>
-		</tr>
-		<tr>
-			<th>6교시(2:30~3:20)</th>
-			<td></td>
-			<td rowspan="2">대학생을위한<br>실용금융</td>
-			<td>채플</td>
-			<td></td>
-			<td colspan="2"></td>
-		</tr>
-		<tr>
-			<th>7교시(3:30~4:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>8교시(4:30~5:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>9교시(6:30~7:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>10교시(7:30~8:20)</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>웹프로그래밍</td>
-			<td colspan="2">대학생을위한<br>실용금융</td>
-		</tr>
+}
+
+nav{
+	width: 995px; height: 70px;
+	margin-top:10px;
+	padding: 10px;
+	background-color:#b2ebbe;
+	border-radius: 25px;
+
+	}
+
+section{
+	width: 674px; height: 240px;
+	margin-top:10px;
+	float: left;
+	margin-right:29px;
+	background-color: #b2ebbe;
+	border-radius: 25px;
+}
+
+aside{
+	width: 300px; height: 250px;
+	margin-top:10px;
+	float: left;
+	font-size: 2px;
+    background-color: #b2ebbe;
+	border-radius: 25px;
+}
+
+tr,td{
+	border:solid 1px black;
+}
+
+footer{
+	width: 674px; height: 100px;
+	margin-top: 10px;
+	background-color: #b2ebbe;
+	padding: 10px;
+  text-align:left;
+  border-radius: 25px;
+  font-family: 'Humanbumsuk';
+font-size: 30px;
+
+}
+
+
+.clear{ clear:both;}
+#logo,#top{border: solid 1px blue}
+#logo{float:left;
+margin-top:5px;
+}
+#top{float:right;
+margin-top:20px;
+margin-right:20px;
+font-family: 'Humanbumsuk';
+font-size: 20px;
+}
+
+#top22{float:left;
+	margin-top:20px;
+margin-left:20px;
+font-family: 'Humanbumsuk';
+font-size: 30px;
+}
+
+li{float:left;
+list-style-type: none;}
+
+#address {float:left;
+padding:10px;
+font-size: 20px;}
+
+#customer {float:left;
+	margin-top: 20px;
+margin-left: 180px;}
+</style>
+</head>
+<body>
+<header>
+<div id="logo">
+	
+</div>
+<div id="top">
+	로그인ㅣ<a href="form_test.html">회원가입</a>ㅣ
+	<a href="http://www.hoseo.ac.kr/Home/BBSList.mbz?action=MAPP_1708240139">홈페이지 소개</a>
+</div>
+<div id="top22">
+	지원이의 홈페이지에 오신걸 환영합니다
+</div>
+</header>
+<nav>
+<ul>
+	<li><form action="form_test.html">
+		<input type="submit" class="button c" value="회원가입">
 		
-		</tr>
-	</table>
-	
-	<a href="form_test.html" ><h3>회원가입</h3></a>
-	<a href="css_ex.html" ><h3>[루바토 펜션 안내]</h3></a>
-	<a href="tag-selector_ex.html" ><h3>행사 안내</h3></a>
-	<a href="ex_padding-margin.html" ><h3>야간 개장 안내</h3></a>
-	<a href="ex1_bg-color.html" ><h3>세일 안내장</h3></a>
-    <a href="ex_table.html"><h3>월간일정표</h3></a>
-	<a href="ex3_float.html"><h3>판매목록</h3></a>
+	</form>
+</li>
 
+	<li><form action="css_ex.html">
+		<input type="submit" class="button c" value="루바토 펜션 안내">
+	</form>
+</li>
+
+	<li><form action="tag-selector_ex.html">
+		<input type="submit" class="button c" value="행사 안내">
+	</form>
+</li>
+
+	<li><form action="ex_padding-margin.html">
+		<input type="submit" class="button c" value="야간 개장 안내">
+	
+	</form>
+</li>
+
+	<li><form action="ex1_bg-color.html">
+		<input type="submit" class="button c" value="세일 안내장">
+		</form>
+	</li>
+	
+			<li><form action="ex_table.html">
+		<input type="submit" class="button c" value="월간일정표">
+	</form>
+</li>
+
+	<li><form action="ex3_float.html">
+		<input type="submit" class="button c" value="판매목록">
+	</form>
+</li>
+
+    <li><form action="ex_layout.html">
+	    <input type="submit" class="button c" value="시간표">
+    </form>
+</li>
+	
+	
+</ul>
+</nav>
+<section>
+	
+</section>
+<aside>
+	<img src='ekffurekffur.png' width="300" height="250"
+			>
+</aside>
+<div class='clear'></div>
+<footer>
+	<div id="address">
+		<ul>
+			<li>충청남도 천안시 동남구 호서대길 12</li><br>
+			<li>TEL:041-560-8114</li><br>
+			<li>이메일:hohoho@naver.com</li>
+		</ul>
+</footer>
 </body>
 </html>
